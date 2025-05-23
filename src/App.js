@@ -8,19 +8,32 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="header-container">
-          <h1 className="app-title">TrendVolt</h1>
-          <p className="app-subtitle">Stay Ahead with the Latest in Tech & AI</p>
+          <div className="header-brand">
+            <div className="text-logo">TV</div>
+            <div>
+              <h1 className="app-title">TrendVolt</h1>
+              <p className="app-subtitle">Powering your tech insights</p>
+            </div>
+          </div>
+          <nav className="header-nav">
+            <button className="nav-button active">Home</button>
+            <button className="nav-button">Tech</button>
+            <button className="nav-button">AI</button>
+            <button className="nav-button">Startups</button>
+          </nav>
         </div>
       </header>
       
       <main className="main-content">
-        <NewsList />
+      <NewsList />
       </main>
       
       <footer className="footer">
         <div className="footer-content">
           <div>&copy; {new Date().getFullYear()} TrendVolt. All rights reserved.</div>
-          <div>Keeping you informed on the latest technology trends</div>
+          <div>
+            <button className="footer-link">Terms</button> • <button className="footer-link">Privacy</button> • <button className="footer-link">Contact</button>
+          </div>
         </div>
       </footer>
     </div>
